@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
+
 import brackets from "../assets/svg/Brackets";
 
 const TagLine = ({ className, children }) => {
@@ -12,3 +13,9 @@ const TagLine = ({ className, children }) => {
 };
 
 export default TagLine;
+
+TagLine.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.any
+}
+

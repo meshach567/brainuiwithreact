@@ -1,4 +1,5 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
+
 import SectionSvg from "../assets/svg/SectionSvg";
 
 const Section = ({
@@ -40,3 +41,12 @@ const Section = ({
 };
 
 export default Section;
+
+Section.propTypes ={
+  className: PropTypes.any,
+  id: PropTypes.any,
+  crosses: PropTypes.any,
+  crossesOffset: PropTypes.any,
+  customPaddings: PropTypes.any,
+  children: PropTypes.any
+}

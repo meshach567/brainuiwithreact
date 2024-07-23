@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types"
 import { loading } from "../assets";
 
 const Generating = ({ className }) => {
@@ -13,5 +13,9 @@ const Generating = ({ className }) => {
     </div>
   );
 };
+
+Generating.propTypes = {
+  className: PropTypes.string
+}
 
 export default Generating;

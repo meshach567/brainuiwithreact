@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import TagLine from "./Tagline";
 
 const Heading = ({ className, title, text, tag }) => {
@@ -12,5 +12,12 @@ const Heading = ({ className, title, text, tag }) => {
     </div>
   );
 };
+
+Heading.propTypes = {
+  className: PropTypes.string,
+   title: PropTypes.string,
+   text: PropTypes.string,
+   tag: PropTypes.string
+}
 
 export default Heading;
