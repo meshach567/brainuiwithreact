@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import { notification1 } from "../assets";
 import { notificationImages } from "../constants";
 
@@ -43,5 +43,10 @@ const Notification = ({ className, title }) => {
     </div>
   );
 };
+
+Notification.propTypes = {
+  className: PropTypes.string,
+   title: PropTypes.string
+}
 
 export default Notification;

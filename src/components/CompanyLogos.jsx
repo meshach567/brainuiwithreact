@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import { companyLogos } from "../constants";
 
 const CompanyLogos = ({ className }) => {
@@ -20,5 +20,9 @@ const CompanyLogos = ({ className }) => {
     </div>
   );
 };
+
+CompanyLogos.propTypes = {
+  className: PropTypes.string
+}
 
 export default CompanyLogos;

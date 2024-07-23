@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { MouseParallax } from "react-just-parallax";
 
@@ -100,3 +100,8 @@ export const BackgroundCircles = ({ parallaxRef }) => {
     </div>
   );
 };
+
+
+BackgroundCircles.propTypes = {
+  parallaxRef: PropTypes.any
+}
